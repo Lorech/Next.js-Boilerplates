@@ -16,7 +16,7 @@
         "groups": ["builtin", "external", "internal", "parent", "sibling"],
         "pathGroups": [
           {
-            "pattern": "{@app|@public|@util}/**",
+            "pattern": "{@app|@intl|@public|@util}/**",
             "group": "internal",
             "position": "after"
           }

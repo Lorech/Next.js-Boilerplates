@@ -1,0 +1,12 @@
+{
+  "index.by": "No",
+  "index.deploy": "Ekspluatē",
+  "index.deployDescription": "Ekspluatē savu Next.js lapu ar publisku URL, izmantojot Vercel.",
+  "index.docs": "Dokumentācija",
+  "index.docsDescription": "Atrodi padziļinātu informāciju par Next.js iespējām un tā API.",
+  "index.getStarted": "Lai sāktu, rediģē",
+  "index.learn": "Mācies",
+  "index.learnDescription": "Apgūsti Next.js interaktīvās apmācībās ar testiem!",
+  "index.templates": "Sagataves",
+  "index.templatesDescription": "Atrodi un ekspluatē parauga Next.js projektus."
+}

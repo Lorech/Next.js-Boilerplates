@@ -6,6 +6,8 @@ import * as localizations from '@intl';
 function getTranslationFile(
   locale: string,
 ): Record<string, string> | Record<string, MessageFormatElement[]> | undefined {
+  // @ts-ignore - locale gets validated in middleware, but we also don't have to be typesafe here as we're attempting
+  // to get any kind of general match of the provided locale to any of our exports from the localizations created.
   return localizations[locale];
 }
 

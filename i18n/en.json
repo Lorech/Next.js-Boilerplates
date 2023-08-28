@@ -7,6 +7,7 @@
   "index.getStarted": "Get started by editing",
   "index.learn": "Learn",
   "index.learnDescription": "Learn about Next.js in an interactive course with quizzes!",
+  "index.logoAlt": "Next.js Logo",
   "index.templates": "Templates",
   "index.templatesDescription": "Discover and deploy boilerplate example Next.js projects."
 }

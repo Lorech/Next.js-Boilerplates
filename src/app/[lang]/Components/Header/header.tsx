@@ -1,13 +1,15 @@
 'use client';
 
 import Image from 'next/image';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 
 import VercelLogo from '@public/vercel.svg';
 
 import classes from './header.module.scss';
 
 function Header() {
+  const intl = useIntl();
+
   return (
     <div className={classes.root}>
       <p className={classes.text}>
@@ -28,7 +30,10 @@ function Header() {
           <FormattedMessage id={'index.by'} defaultMessage={'By'} />{' '}
           <Image
             src={VercelLogo}
-            alt="Vercel Logo"
+            alt={intl.formatMessage({
+              id: 'index.vercelLogo',
+              defaultMessage: 'Vercel Logo',
+            })}
             className={classes.image}
             width={100}
             height={24}

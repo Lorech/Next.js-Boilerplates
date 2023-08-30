@@ -16,7 +16,7 @@ function Logo() {
         className={classes.image}
         src={NextLogo}
         alt={intl.formatMessage({
-          id: 'index.LogoAlt',
+          id: 'index.nextLogo',
           defaultMessage: 'Next.js Logo',
         })}
         width={180}

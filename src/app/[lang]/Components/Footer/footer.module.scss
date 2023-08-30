@@ -1,0 +1,50 @@
+.root {
+  @apply grid;
+  @apply mb-32;
+  @apply text-center;
+
+  @include desktop {
+    @apply mb-0;
+    @apply grid-cols-4;
+    @apply text-left;
+  }
+}
+
+.link {
+  @apply rounded-lg;
+  @apply border;
+  @apply border-transparent;
+  @apply px-5;
+  @apply py-4;
+  @apply transition-colors;
+
+  &:hover {
+    @apply border-gray-300;
+    @apply bg-gray-100;
+    @apply dark:border-neutral-700;
+    @apply dark:bg-neutral-800/30;
+
+    .arrow {
+      @apply translate-x-1;
+    }
+  }
+}
+
+.arrow {
+  @apply inline-block;
+  @apply transition-transform;
+  @apply motion-reduce:transform-none;
+}
+
+.heading {
+  @apply mb-3;
+  @apply text-2xl;
+  @apply font-semibold;
+}
+
+.description {
+  @apply m-0;
+  @apply max-w-[30ch];
+  @apply text-sm;
+  @apply opacity-50;
+}

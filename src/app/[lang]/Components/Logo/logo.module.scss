@@ -1,0 +1,46 @@
+.root {
+  @apply flex;
+  @apply relative;
+  @apply place-items-center;
+
+  &:before {
+    @apply h-[300px];
+    @apply w-[480px];
+    @apply absolute;
+    @apply -translate-x-1/2;
+    @apply rounded-full;
+    @apply bg-gradient-radial;
+    @apply from-white;
+    @apply to-transparent;
+    @apply blur-2xl;
+    @apply content-[''];
+    @apply dark:bg-gradient-to-br;
+    @apply dark:from-transparent;
+    @apply dark:to-blue-700/10;
+
+    @include desktop {
+      @apply h-[360px];
+    }
+  }
+
+  &:after {
+    @apply h-[180px];
+    @apply w-[240px];
+    @apply absolute;
+    @apply -z-20;
+    @apply translate-x-1/3;
+    @apply bg-gradient-conic;
+    @apply from-sky-200;
+    @apply via-blue-200;
+    @apply blur-2xl;
+    @apply content-[''];
+    @apply dark:from-sky-900;
+    @apply dark:via-[#0141ff]/40;
+  }
+}
+
+.image {
+  @apply relative;
+  @apply dark:drop-shadow-[0_0_0.3rem_#ffffff70];
+  @apply dark:invert;
+}

@@ -1,0 +1,87 @@
+.root {
+  @apply w-full;
+  @apply max-w-5xl;
+  @apply z-10;
+  @apply items-center;
+  @apply justify-between;
+  @apply font-mono;
+  @apply text-sm;
+
+  @include desktop {
+    @apply flex;
+  }
+}
+
+.text {
+  @apply flex;
+  @apply fixed;
+  @apply left-0;
+  @apply top-0;
+  @apply w-full;
+  @apply pb-6;
+  @apply pt-8;
+  @apply justify-center;
+  @apply border-b;
+  @apply border-gray-300;
+  @apply bg-gradient-to-b;
+  @apply from-zinc-200;
+  @apply backdrop-blur-2xl;
+  @apply dark:border-neutral-800;
+  @apply dark:bg-zinc-800/30;
+  @apply dark:from-inherit;
+
+  @include desktop {
+    @apply static;
+    @apply w-auto;
+    @apply rounded-xl;
+    @apply border;
+    @apply bg-gray-200;
+    @apply p-4;
+    @apply dark:bg-zinc-800/30;
+  }
+}
+
+.code {
+  @apply font-mono;
+  @apply font-bold;
+}
+
+.imageWrapper {
+  @apply flex;
+  @apply fixed;
+  @apply bottom-0;
+  @apply left-0;
+  @apply h-48;
+  @apply w-full;
+  @apply items-end;
+  @apply justify-center;
+  @apply bg-gradient-to-t;
+  @apply from-white;
+  @apply via-white;
+  @apply dark:from-black;
+  @apply dark:via-black;
+
+  @include desktop {
+    @apply static;
+    @apply h-auto;
+    @apply w-auto;
+    @apply bg-none;
+  }
+}
+
+.image {
+  @apply dark:invert;
+}
+
+.link {
+  @apply flex;
+  @apply pointer-events-none;
+  @apply place-items-center;
+  @apply gap-2;
+  @apply p-8;
+
+  @include desktop {
+    @apply lg:pointer-events-auto;
+    @apply lg:p-0;
+  }
+}

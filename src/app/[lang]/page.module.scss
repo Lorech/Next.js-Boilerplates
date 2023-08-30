@@ -1,0 +1,8 @@
+.root {
+  @apply flex;
+  @apply flex-col;
+  @apply min-h-screen;
+  @apply p-24;
+  @apply items-center;
+  @apply justify-between;
+}

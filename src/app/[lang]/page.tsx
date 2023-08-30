@@ -1,8 +1,9 @@
 import { Footer, Header, Logo } from './Components';
+import classes from './page.module.scss';
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className={classes.root}>
       <Header />
       <Logo />
       <Footer />

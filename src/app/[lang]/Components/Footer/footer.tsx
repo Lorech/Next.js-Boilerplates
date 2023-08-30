@@ -1,26 +1,27 @@
 'use client';
 
+import classNames from 'classnames';
 import { Inter } from 'next/font/google';
 import { FormattedMessage } from 'react-intl';
+
+import classes from './footer.module.scss';
 
 const inter = Inter({ subsets: ['latin'] });
 
 function Footer() {
   return (
-    <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
+    <div className={classNames(classes.root, inter.className)}>
       <a
         href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+        className={classes.link}
         target="_blank"
         rel="noopener noreferrer"
       >
-        <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
+        <h2 className={classes.heading}>
           <FormattedMessage id="index.docs" defaultMessage={'Docs'} />{' '}
-          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-            -&gt;
-          </span>
+          <span className={classes.arrow}>-&gt;</span>
         </h2>
-        <p className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}>
+        <p className={classes.description}>
           <FormattedMessage
             id={'index.docsDescription'}
             defaultMessage={
@@ -32,17 +33,15 @@ function Footer() {
 
       <a
         href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+        className={classes.link}
         target="_blank"
         rel="noopener noreferrer"
       >
-        <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
+        <h2 className={classes.heading}>
           <FormattedMessage id={'index.learn'} defaultMessage={'Learn'} />{' '}
-          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-            -&gt;
-          </span>
+          <span className={classes.arrow}>-&gt;</span>
         </h2>
-        <p className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}>
+        <p className={classes.description}>
           <FormattedMessage
             id={'index.learnDescription'}
             defaultMessage={
@@ -54,20 +53,18 @@ function Footer() {
 
       <a
         href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+        className={classes.link}
         target="_blank"
         rel="noopener noreferrer"
       >
-        <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
+        <h2 className={classes.heading}>
           <FormattedMessage
             id={'index.templates'}
             defaultMessage={'Templates'}
           />{' '}
-          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-            -&gt;
-          </span>
+          <span className={classes.arrow}>-&gt;</span>
         </h2>
-        <p className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}>
+        <p className={classes.description}>
           <FormattedMessage
             id={'index.templatesDescription'}
             defaultMessage={
@@ -79,17 +76,15 @@ function Footer() {
 
       <a
         href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+        className={classes.link}
         target="_blank"
         rel="noopener noreferrer"
       >
-        <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
+        <h2 className={classes.heading}>
           <FormattedMessage id={'index.deploy'} defaultMessage={'Deploy'} />{' '}
-          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-            -&gt;
-          </span>
+          <span className={classes.arrow}>-&gt;</span>
         </h2>
-        <p className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}>
+        <p className={classes.description}>
           <FormattedMessage
             id={'index.deployDescription'}
             defaultMessage={

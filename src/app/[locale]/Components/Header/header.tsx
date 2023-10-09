@@ -1,22 +1,17 @@
-'use client';
-
 import Image from 'next/image';
-import { FormattedMessage, useIntl } from 'react-intl';
 
+import { getI18n } from '@intl/server';
 import VercelLogo from '@public/vercel.svg';
 
 import classes from './header.module.scss';
 
-function Header() {
-  const intl = useIntl();
+const Header = async () => {
+  const t = await getI18n();
 
   return (
     <div className={classes.root}>
       <p className={classes.text}>
-        <FormattedMessage
-          id={'index.getStarted'}
-          defaultMessage={'Get started by editing'}
-        />
+        {t('index.getStarted')}
         &nbsp;
         <code className={classes.code}>src/app/page.tsx</code>
       </p>
@@ -27,13 +22,10 @@ function Header() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FormattedMessage id={'index.by'} defaultMessage={'By'} />{' '}
+          {t('index.by')}{' '}
           <Image
             src={VercelLogo}
-            alt={intl.formatMessage({
-              id: 'index.vercelLogo',
-              defaultMessage: 'Vercel Logo',
-            })}
+            alt={t('index.vercelLogo')}
             className={classes.image}
             width={100}
             height={24}
@@ -43,6 +35,6 @@ function Header() {
       </div>
     </div>
   );
-}
+};
 
 export default Header;

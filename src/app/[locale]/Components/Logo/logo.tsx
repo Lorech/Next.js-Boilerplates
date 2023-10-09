@@ -1,30 +1,25 @@
-'use client';
-
 import Image from 'next/image';
-import { useIntl } from 'react-intl';
 
+import { getI18n } from '@intl/server';
 import NextLogo from '@public/next.svg';
 
 import classes from './logo.module.scss';
 
-function Logo() {
-  const intl = useIntl();
+const Logo = async () => {
+  const t = await getI18n();
 
   return (
     <div className={classes.root}>
       <Image
         className={classes.image}
         src={NextLogo}
-        alt={intl.formatMessage({
-          id: 'index.nextLogo',
-          defaultMessage: 'Next.js Logo',
-        })}
+        alt={t('index.nextLogo')}
         width={180}
         height={37}
         priority
       />
     </div>
   );
-}
+};
 
 export default Logo;

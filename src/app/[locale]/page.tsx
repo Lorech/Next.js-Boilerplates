@@ -1,7 +1,7 @@
 import { Footer, Header, Logo } from './Components';
 import classes from './page.module.scss';
 
-export default function Page() {
+const Page = async () => {
   return (
     <main className={classes.root}>
       <Header />
@@ -9,4 +9,6 @@ export default function Page() {
       <Footer />
     </main>
   );
-}
+};
+
+export default Page;

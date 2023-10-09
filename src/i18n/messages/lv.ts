@@ -1,4 +1,5 @@
-{
+// prettier-ignore
+export default {
   "index.by": "No",
   "index.deploy": "Ekspluatē",
   "index.deployDescription": "Ekspluatē savu Next.js lapu ar publisku URL, izmantojot Vercel.",
@@ -11,4 +12,4 @@
   "index.templates": "Sagataves",
   "index.templatesDescription": "Atrodi un ekspluatē parauga Next.js projektus.",
   "index.vercelLogo": "Vercel Logo"
-}
+} as const

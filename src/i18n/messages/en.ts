@@ -1,4 +1,5 @@
-{
+// prettier-ignore
+export default {
   "index.by": "By",
   "index.deploy": "Deploy",
   "index.deployDescription": "Instantly deploy your Next.js site to a shareable URL with Vercel.",
@@ -11,4 +12,4 @@
   "index.templates": "Templates",
   "index.templatesDescription": "Discover and deploy boilerplate example Next.js projects.",
   "index.vercelLogo": "Vercel Logo"
-}
+} as const
